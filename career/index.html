@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Career Development — Hassan EL SAHILY</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 <header>
   <nav>
     <a href="../index.html">Welcome</a>
     <a href="../engineering/index.html">Engineering</a>
+    <a href="../mobility/index.html">Mobility</a>
+    <a href="../sustainability/index.html">Sustainability</a>
+    <a href="../activities/index.html">Activities</a>
     <a href="index.html">Career</a>
   </nav>
 </header>
 
-<h1>Career Development</h1>
-<ul>
-  <li><a href="internships.html">Internships</a></li>
-  <li><a href="pep.html">PEP</a></li>
-</ul>
+<main>
+  <h1>Career Development</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>Internships</h2>
+      <p>Professional experiences that helped me develop technical and teamwork skills in real environments.</p>
+      <a href="internships.html" class="btn">View Internships</a>
+    </div>
+
+    <div class="card">
+      <h2>PEP (Personalized Professional Project)</h2>
+      <p>Reflections on my professional ambitions, specialization goals, and career orientation as an engineer.</p>
+      <a href="pep.html" class="btn">View PEP</a>
+    </div>
+  </div>
+</main>
 
 <footer>© <span id="year"></span> Hassan EL SAHILY</footer>
-<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
