@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Engineering Course — Hassan EL SAHILY</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="../index.html">Welcome</a>
-      <a href="index.html">Engineering Course</a>
-      <a href="../mobility/index.html">International Mobility</a>
-      <a href="../sustainability/index.html">Sustainability</a>
-      <a href="../activities/index.html">Activities</a>
-      <a href="../career/index.html">Career</a>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <a href="../index.html">Welcome</a>
+    <a href="index.html">Engineering</a>
+    <a href="../mobility/index.html">Mobility</a>
+    <a href="../sustainability/index.html">Sustainability</a>
+    <a href="../activities/index.html">Activities</a>
+    <a href="../career/index.html">Career</a>
+  </nav>
+</header>
 
+<main>
   <h1>Engineering Course</h1>
-  <ul>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="productions.html">Productions</a></li>
-  </ul>
+  <div class="card">
+    <p>Overview of my CMI Informatics, Systems & Networks engineering path at the University of Strasbourg.</p>
+  </div>
 
-  <p>Présentation générale du cursus CMI : modules, enseignements, et apprentissages clés.</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Projects</h2>
+      <p>Key academic and technical projects developed throughout the CMI course.</p>
+      <a href="projects.html" class="btn">View Projects</a>
+    </div>
 
-  <footer>© <span id="year"></span> Hassan EL SAHILY</footer>
-  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+    <div class="card">
+      <h2>Productions</h2>
+      <p>Reports, diagrams, and notable deliverables showcasing technical and analytical work.</p>
+      <a href="productions.html" class="btn">View Productions</a>
+    </div>
+  </div>
+</main>
+
+<footer>© <span id="year"></span> Hassan EL SAHILY</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>

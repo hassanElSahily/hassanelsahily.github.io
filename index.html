@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,22 +7,27 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Welcome</a>
-      <a href="engineering/index.html">Engineering Course</a>
-      <a href="mobility/index.html">International Mobility</a>
-      <a href="sustainability/index.html">Sustainability & Civic Engagement</a>
-      <a href="activities/index.html">Sport & Other Activities</a>
-      <a href="career/index.html">Career Development</a>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <a href="index.html">Welcome</a>
+    <a href="engineering/index.html">Engineering</a>
+    <a href="mobility/index.html">Mobility</a>
+    <a href="sustainability/index.html">Sustainability</a>
+    <a href="activities/index.html">Activities</a>
+    <a href="career/index.html">Career</a>
+  </nav>
+</header>
 
+<main>
   <h1>Welcome</h1>
-  <p>Bienvenue sur mon e-portfolio ! Je suis <strong>Hassan EL SAHILY</strong>, étudiant en CMI Informatique, Systèmes et Réseaux à l’Université de Strasbourg.</p>
-  <p>Ce site présente mon parcours d’ingénieur, mes projets, mes engagements et mes expériences sur trois ans.</p>
+  <div class="card">
+    <p>Hello! I'm <strong>Hassan EL SAHILY</strong>, a CMI Informatics, Systems & Networks student at the University of Strasbourg.</p>
+    <p>This e-portfolio presents my academic path, projects, internships, international experiences, and civic commitments throughout my 3-year engineering course.</p>
+    <a class="btn" href="engineering/index.html">Explore my journey</a>
+  </div>
+</main>
 
-  <footer>© <span id="year"></span> Hassan EL SAHILY</footer>
-  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<footer>© <span id="year"></span> Hassan EL SAHILY · University of Strasbourg</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
