@@ -3,251 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>e-Portfolio — Hassan EL SAHILY</title>
-  <style>
-    :root {
-      --accent: #004aad;
-      --bg: #f7f9fc;
-      --nav-bg: #ffffff;
-      --text: #1a1a1a;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    header {
-      background: var(--nav-bg);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: auto;
-      padding: 0.8rem 1rem;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      position: relative;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: var(--text);
-      padding: 0.7rem 1rem;
-      display: block;
-    }
-
-    nav ul li:hover > a {
-      background: var(--accent);
-      color: white;
-      border-radius: 6px;
-    }
-
-    nav ul li ul {
-      position: absolute;
-      left: 0;
-      top: 100%;
-      background: white;
-      min-width: 200px;
-      display: none;
-      border-radius: 6px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    nav ul li:hover ul {
-      display: block;
-    }
-
-    nav ul li ul li a {
-      padding: 0.6rem 1rem;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h1, h2 {
-      color: var(--accent);
-    }
-
-    footer {
-      text-align: center;
-      background: var(--nav-bg);
-      padding: 1rem;
-      color: #555;
-      font-size: 0.9rem;
-      border-top: 1px solid #ddd;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      margin: 1rem 0;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-    }
-
-    a.btn {
-      display: inline-block;
-      margin-top: 10px;
-      background: var(--accent);
-      color: white;
-      padding: 8px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-
-    a.btn:hover {
-      background: #003080;
-    }
-  </style>
+  <title>Welcome — Hassan EL SAHILY</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header>
-    <div class="nav-container">
-      <div class="logo">Hassan EL SAHILY</div>
-      <nav>
-        <ul>
-          <li><a href="#welcome">Welcome</a></li>
-          <li>
-            <a href="#engineering">Engineering Course</a>
-            <ul>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#productions">Productions</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#mobility">International Mobility</a>
-            <ul>
-              <li><a href="#pce">PCE</a></li>
-              <li><a href="#lv2">LV2</a></li>
-            </ul>
-          </li>
-          <li><a href="#sustainability">Sustainability & Civic Engagement</a></li>
-          <li><a href="#sports">Sport & Other Activities</a></li>
-          <li>
-            <a href="#career">Career Development</a>
-            <ul>
-              <li><a href="#internships">Internships</a></li>
-              <li><a href="#pep">PEP</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <a href="index.html">Welcome</a>
+      <a href="engineering/index.html">Engineering Course</a>
+      <a href="mobility/index.html">International Mobility</a>
+      <a href="sustainability/index.html">Sustainability & Civic Engagement</a>
+      <a href="activities/index.html">Sport & Other Activities</a>
+      <a href="career/index.html">Career Development</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="welcome">
-      <h1>Welcome</h1>
-      <div class="card">
-        <p>Welcome to my professional e-portfolio. I am <strong>Hassan EL SAHILY</strong>, student in the CMI Informatics, Systems, and Networks program at the University of Strasbourg.  
-        This space presents my engineering training, projects, international experiences, civic commitments, and career development over three years of study.</p>
-      </div>
-    </section>
+  <h1>Welcome</h1>
+  <p>Bienvenue sur mon e-portfolio ! Je suis <strong>Hassan EL SAHILY</strong>, étudiant en CMI Informatique, Systèmes et Réseaux à l’Université de Strasbourg.</p>
+  <p>Ce site présente mon parcours d’ingénieur, mes projets, mes engagements et mes expériences sur trois ans.</p>
 
-    <section id="engineering">
-      <h2>Engineering Course</h2>
-      <div class="grid">
-        <div class="card">
-          <h3 id="projects">Projects</h3>
-          <p>Include academic and personal projects here: networking applications, assembly programs, data analysis, etc.</p>
-          <a href="#" class="btn">View details</a>
-        </div>
-        <div class="card">
-          <h3 id="productions">Productions</h3>
-          <p>Highlight your best productions: reports, diagrams, or applications built during your CMI path.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="mobility">
-      <h2>International Mobility</h2>
-      <div class="grid">
-        <div class="card">
-          <h3 id="pce">PCE (Personal & Cultural Experience)</h3>
-          <p>Summarize intercultural projects, exchange preparation, or communication modules.</p>
-        </div>
-        <div class="card">
-          <h3 id="lv2">LV2</h3>
-          <p>Present your second foreign language learning progress and relevant certifications.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="sustainability">
-      <h2>Sustainability & Civic Engagement</h2>
-      <div class="card">
-        <p>Describe your participation in sustainable or civic actions (environmental projects, volunteering, or awareness initiatives).</p>
-      </div>
-    </section>
-
-    <section id="sports">
-      <h2>Sport & Other Activities</h2>
-      <div class="card">
-        <p>Show your sport activities or hobbies that contribute to your balance and teamwork spirit.</p>
-      </div>
-    </section>
-
-    <section id="career">
-      <h2>Career Development</h2>
-      <div class="grid">
-        <div class="card">
-          <h3 id="internships">Internships</h3>
-          <p>Detail your professional experiences, such as your internship at SMART WATERS (Nice), and other future work experiences.</p>
-        </div>
-        <div class="card">
-          <h3 id="pep">PEP (Personalized Professional Project)</h3>
-          <p>Summarize your professional goals, career reflections, and progression throughout the CMI course.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    © <span id="year"></span> — Hassan EL SAHILY · University of Strasbourg · CMI Informatique
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <footer>© <span id="year"></span> Hassan EL SAHILY</footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
