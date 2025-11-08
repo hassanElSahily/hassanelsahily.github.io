@@ -129,27 +129,24 @@ footer {
   color: #666;
   border-top: 1px solid #ddd;
 }
-.social-links {
-  margin-top: 1rem;
-}
-
-.linkedin-btn {
+.btn-linkedin {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.5rem 1rem;
-  background-color: #0a66c2;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2e7d32; /* ton vert principal */
   color: white;
-  text-decoration: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-weight: 500;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.linkedin-btn:hover {
-  background-color: #004182;
+.btn-linkedin:hover {
+  background-color: #256828;
+  transform: translateY(-2px);
 }
 
-.linkedin-btn i {
+.btn-linkedin i {
   font-size: 1.2rem;
 }
