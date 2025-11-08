@@ -129,3 +129,27 @@ footer {
   color: #666;
   border-top: 1px solid #ddd;
 }
+.social-links {
+  margin-top: 1rem;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background-color: #0a66c2;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #004182;
+}
+
+.linkedin-btn i {
+  font-size: 1.2rem;
+}
