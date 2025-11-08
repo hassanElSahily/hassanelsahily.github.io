@@ -48,45 +48,46 @@
       opacity: 0.8;
     }
 
-    .container {
+    /* ----- Layout ----- */
+    .hero {
       display: flex;
-      align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      min-height: 80vh;
-      padding: 2rem;
+      align-items: center;
+      min-height: 85vh;
       gap: 4rem;
+      flex-wrap: wrap;
+      padding: 2rem;
     }
 
+    /* ----- Profile Card ----- */
     .profile {
       background: var(--white);
       border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
       padding: 2rem;
-      max-width: 350px;
+      width: 320px;
       text-align: center;
       transition: 0.4s ease;
     }
 
     .profile:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
     }
 
     .profile img {
       width: 160px;
       height: 160px;
-      object-fit: cover;
       border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 1.2rem;
       box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
 
     .profile h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
       color: var(--dark-green);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
     }
 
     .profile p {
@@ -95,8 +96,9 @@
       line-height: 1.5;
     }
 
+    /* ----- Intro Text ----- */
     .intro {
-      max-width: 600px;
+      max-width: 550px;
     }
 
     .intro h1 {
@@ -104,11 +106,15 @@
       font-size: 3rem;
       color: var(--dark-green);
       margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .intro p {
       font-size: 1.05rem;
       margin-bottom: 2rem;
+      line-height: 1.8;
     }
 
     .buttons {
@@ -153,14 +159,21 @@
       color: #666;
     }
 
-    @media (max-width: 800px) {
-      .container {
+    @media (max-width: 850px) {
+      .hero {
         flex-direction: column;
         text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
       }
 
       .intro h1 {
+        justify-content: center;
         font-size: 2.2rem;
+      }
+
+      .intro p {
+        font-size: 1rem;
       }
     }
   </style>
@@ -178,9 +191,9 @@
   </nav>
 </header>
 
-<main class="container">
+<section class="hero">
   <div class="profile">
-    <img src="images/Eportfolio_photo.jpg" alt="Hassan EL SAHILY">
+    <img src="images/hassan.jpg" alt="Hassan EL SAHILY">
     <h2>Hassan EL SAHILY</h2>
     <p>CMI Informatics, Systems & Networks student<br>University of Strasbourg</p>
   </div>
@@ -188,10 +201,9 @@
   <div class="intro">
     <h1>Hello 👋</h1>
     <p>
-      I’m <strong>Hassan</strong>, a third-year CMI student specializing in 
-      <strong>Informatics, Systems and Networks</strong> at the University of Strasbourg.  
-      I’m passionate about <strong>network architectures, computer systems, and cybersecurity</strong>, 
-      and I aim to apply engineering principles to design efficient and secure infrastructures.
+      I’m <strong>Hassan</strong>, a passionate student in the <strong>CMI Informatics, Systems & Networks</strong> program at the University of Strasbourg.  
+      My interests revolve around <strong>network architectures, operating systems, and cybersecurity</strong>.  
+      I enjoy building efficient, reliable, and secure systems while continuously learning new technologies.
     </p>
 
     <div class="buttons">
@@ -199,7 +211,7 @@
       <a href="engineering/projects.html" class="btn secondary">Projects</a>
     </div>
   </div>
-</main>
+</section>
 
 <footer>© <span id="year"></span> Hassan EL SAHILY · University of Strasbourg</footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
