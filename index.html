@@ -75,11 +75,11 @@
     }
 
     .profile img {
-      width: 160px;
-      height: 160px;
+      width: 250px;
+      height: 290px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 1.2rem;
+     object-position: 80% 35%;  margin-bottom: 1.2rem;
       box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
 
@@ -176,6 +176,61 @@
         font-size: 1rem;
       }
     }
+
+    .intro h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.highlight {
+  color: var(--dark-green);
+  font-weight: 700;
+}
+
+.description {
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.05rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Petite animation subtile */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation de la main */
+.wave {
+  display: inline-block;
+  animation: waveMotion 1.8s infinite;
+}
+
+@keyframes waveMotion {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60%,100% { transform: rotate(0deg); }
+}
+
   </style>
 </head>
 
@@ -199,18 +254,30 @@
   </div>
 
   <div class="intro">
-    <h1>Hello 👋</h1>
-    <p>
-      I’m <strong>Hassan</strong>, a passionate student in the <strong>CMI Informatics, Systems & Networks</strong> program at the University of Strasbourg.  
-      My interests revolve around <strong>network architectures, operating systems, and cybersecurity</strong>.  
-      I enjoy building efficient, reliable, and secure systems while continuously learning new technologies.
-    </p>
+  <h1>Hello <span class="wave">👋</span></h1>
 
-    <div class="buttons">
-      <a href="career/internships.html" class="btn primary">View CV</a>
-      <a href="engineering/projects.html" class="btn secondary">Projects</a>
-    </div>
+  <h3>Welcome to my digital portfolio</h3>
+
+  <p class="tagline">
+    <span class="highlight">Engineer in the making</span> passionate about 
+    <strong>systems, networks, and cybersecurity</strong>.
+  </p>
+
+  <p class="description">
+    I’m <strong>Hassan</strong>, currently completing my 
+    <strong>CMI Informatics, Systems & Networks</strong> degree 
+    at the <strong>University of Strasbourg</strong>.  
+    I focus on <em>network architectures, operating systems, and information security</em>.  
+    I aim to design <strong>efficient, secure, and innovative</strong> infrastructures 
+    that serve tomorrow’s technologies.
+  </p>
+
+  <div class="buttons">
+    <a href="career/internships.html" class="btn primary">View CV</a>
+    <a href="engineering/projects.html" class="btn secondary">Projects</a>
   </div>
+</div>
+
 </section>
 
 <footer>© <span id="year"></span> Hassan EL SAHILY · University of Strasbourg</footer>
