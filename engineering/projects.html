@@ -5,25 +5,213 @@
   <title>Projects — Hassan EL SAHILY</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    .skills {
+      margin-top: 0.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .skill {
+      background: var(--green);
+      color: white;
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <nav>
       <a href="../index.html">Welcome</a>
-      <a href="index.html">Engineering Course</a>
-      <a href="../mobility/index.html">International Mobility</a>
+      <a href="index.html">Engineering</a>
+      <a href="../mobility/index.html">Mobility</a>
       <a href="../career/index.html">Career</a>
     </nav>
   </header>
 
-  <h1>Projects</h1>
-  <ul>
-    <li><strong>Space Invaders (Assembly)</strong> — Développement d’un jeu rétro en assembleur.</li>
-    <li><strong>UDP Protocol (C)</strong> — Transmission avec fenêtre glissante et gestion d’ACKs.</li>
-    <li><strong>Python Data Analysis</strong> — Traitement cartographique (SMART WATERS, Nice 2023).</li>
-  </ul>
+  <main>
+    <h1>My Engineering Projects</h1>
+
+    <!-- ========================= -->
+    <!--  1. Final Year Project     -->
+    <!-- ========================= -->
+    <div class="card">
+      <h2>🎮 Gems Hunt – FPS Multiplayer (2025)</h2>
+      <p>
+        First-person shooter inspired by Pokémon Snap, developed in a real-time 3D environment with a cartoon aesthetic.  
+        I was responsible for the <strong>network architecture</strong> and the <strong>backend logic</strong>.
+      </p>
+
+      <ul>
+        <li>Client–server communication, authentication system, secure connections.</li>
+        <li>Database integration with PostgreSQL.</li>
+        <li>Continuous integration (CI/CD), repository structuring.</li>
+        <li>Management of multiplayer interactions and real-time updates.</li>
+      </ul>
+
+      <div class="skills">
+        <span class="skill">C#</span>
+        <span class="skill">Unity</span>
+        <span class="skill">.NET</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">Docker</span>
+        <span class="skill">GitLab CI</span>
+      </div>
+    </div>
+
+    <!-- ========================= -->
+    <!--  2. ML Project             -->
+    <!-- ========================= -->
+    <div class="card">
+      <h2>🤖 Machine Learning – Bagging of Decision Trees (2025)</h2>
+      <p>
+        Implementation of a complete bagging algorithm <em>from scratch</em>:  
+        bootstrap sampling, creation of optimized decision trees, weighted aggregation, bias/variance study.
+      </p>
+
+      <ul>
+        <li>Accuracy improved from <strong>95% to 98%</strong>.</li>
+        <li>Implementation of numerical methods and model evaluation metrics.</li>
+        <li>Vectorized computation using numpy.</li>
+      </ul>
+
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">NumPy</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Statistics</span>
+      </div>
+    </div>
+
+    <!-- ========================= -->
+    <!--  3. Database Project       -->
+    <!-- ========================= -->
+    <div class="card">
+      <h2>🗃️ Oracle Database – Video Preference Platform (2025)</h2>
+      <p>
+        Complete end-to-end design of an Oracle database system for a video recommendation website.
+      </p>
+
+      <ul>
+        <li>Design of E/R diagrams and relational models.</li>
+        <li>SQL queries, joins, views, stored procedures.</li>
+        <li>PL/SQL: triggers, constraints, transactions, indexing.</li>
+        <li>Performance optimization and integrity control.</li>
+      </ul>
+
+      <div class="skills">
+        <span class="skill">PL/SQL</span>
+        <span class="skill">Oracle</span>
+        <span class="skill">SQL</span>
+        <span class="skill">DBeaver</span>
+        <span class="skill">Oracle Data Modeler</span>
+      </div>
+    </div>
+
+    <!-- ========================= -->
+    <!--  4. Algorithms Projects    -->
+    <!-- ========================= -->
+    <div class="card">
+      <h2>🧭 Procedural Labyrinth & Pathfinding (2024–2025)</h2>
+      <p>
+        Implementation of optimized algorithms for maze generation and pathfinding,  
+        as well as a risk-based post-moderation system.
+      </p>
+
+      <ul>
+        <li>Performance optimization, complexity analysis.</li>
+        <li>Unit tests and statistical evaluation.</li>
+        <li>Group collaboration and English technical reporting.</li>
+      </ul>
+
+      <div class="skills">
+        <span class="skill">C</span>
+        <span class="skill">Python</span>
+        <span class="skill">Algorithms</span>
+        <span class="skill">Statistics</span>
+      </div>
+    </div>
+
+    <!-- ========================= -->
+    <!--  5. Networking Project     -->
+    <!-- ========================= -->
+    <div class="card">
+      <h2>🌐 Local Network Deployment (2024)</h2>
+      <p>
+        Complete configuration of a local network with routing, addressing, and diagnostics.
+      </p>
+
+      <ul>
+        <li>Subnet design and IP range calculation.</li>
+        <li>Router configuration (Cisco IOS).</li>
+        <li>Packet inspection with Wireshark.</li>
+        <li>Linux and Cisco command-line administration.</li>
+      </ul>
+
+      <div class="skills">
+        <span class="skill">Cisco IOS</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Wireshark</span>
+        <span class="skill">Networking</span>
+      </div>
+    </div>
+
+    <!-- ========================= -->
+    <!--  6. Assembly Game          -->
+    <!-- ========================= -->
+    <div class="card">
+      <h2>🕹️ Space Invaders – RISC-V Assembly (2024)</h2>
+      <p>
+        Full retro game coded in assembly, exploring low-level architecture and memory management.
+      </p>
+
+      <ul>
+        <li>Input handling, graphics rendering, and game logic.</li>
+        <li>Direct memory access and performance optimization.</li>
+      </ul>
+
+      <div class="skills">
+        <span class="skill">Assembly</span>
+        <span class="skill">RISC-V</span>
+        <span class="skill">Low-Level Programming</span>
+      </div>
+    </div>
+
+    <!-- ========================= -->
+    <!--  7. Web Portfolio          -->
+    <!-- ========================= -->
+    <div class="card">
+      <h2>🌍 Multilingual Personal Portfolio Website (2024)</h2>
+      <p>
+        Development of a secure, responsive personal website supporting multilingual content  
+        and dynamic interactions.
+      </p>
+
+      <ul>
+        <li>AJAX requests and JSON data exchange.</li>
+        <li>SQLite storage and PHP backend.</li>
+        <li>Front-end design and accessibility improvements.</li>
+      </ul>
+
+      <div class="skills">
+        <span class="skill">HTML/CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">PHP</span>
+        <span class="skill">SQLite</span>
+        <span class="skill">AJAX</span>
+      </div>
+    </div>
+  </main>
 
   <footer>© <span id="year"></span> Hassan EL SAHILY</footer>
-  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
 </body>
 </html>
