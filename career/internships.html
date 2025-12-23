@@ -39,6 +39,42 @@
     .card p {
       margin-bottom: 1rem;
     }
+
+    .internship.project {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .internship-results {
+      text-align: center;
+    }
+
+    .internship-results img {
+      width: 85%;
+      /* 👈 image plus petite */
+      max-width: 320px;
+      height: auto;
+      margin: 0.75rem auto 1rem;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .internship-results .btn {
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .internship.project {
+        grid-template-columns: 1fr;
+      }
+
+      .internship-results {
+        margin-top: 1.5rem;
+      }
+    }
   </style>
 </head>
 
@@ -104,13 +140,16 @@
           <li>Experience in real-time systems and data visualization interfaces.</li>
           <li>Improved autonomy, problem-solving, and experimental methodology.</li>
         </ul>
+      </div>
+
+      <div class="internship-results">
+        <h3>📊 Results</h3>
+
+        <img src="../images/ecran.png" alt="ICube laboratory internship – embedded systems">
 
         <a class="btn" href="../reports/memoire_stage_L3.pdf" target="_blank">
           View report (PDF)
         </a>
-      </div>
-      <div class="internship-image">
-        <img src="../images/ecran.png" alt="ICube laboratory internship – embedded systems">
       </div>
     </div>
 
