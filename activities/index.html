@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Sport & Other Activities — Hassan EL SAHILY</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    .activity-image {
+      padding: 0;
+    }
+
+    .activity-image img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-  <nav>
-    <a href="../index.html">Welcome</a>
-    <a href="../engineering/index.html">Engineering</a>
-    <a href="../mobility/index.html">Mobility</a>
-    <a href="../sustainability/index.html">Sustainability</a>
-    <a href="index.html">Activities</a>
-    <a href="../career/index.html">Career</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="../index.html">Welcome</a>
+      <a href="../engineering/index.html">Engineering</a>
+      <a href="../mobility/index.html">Mobility</a>
+      <a href="../sustainability/index.html">Sustainability</a>
+      <a href="index.html">Activities</a>
+      <a href="../career/index.html">Career</a>
+    </nav>
+  </header>
 
-<main>
-  <h1>Sport & Other Activities</h1>
+  <main>
+    <h1>Sport & Other Activities</h1>
 
-  <div class="card">
-    <p>
-      Beyond my academic and technical path, I place great importance on activities
-      that nourish curiosity, creativity, and personal balance.
-      Traveling and hiking play a central role in this approach,
-      allowing me to discover new places, landscapes, cultures,
-      and perspectives through direct experience.
-    </p>
-
-    <p>
-      I am also deeply interested in writing, particularly poetry and journalistic-style texts,
-      which I use as ways to observe the world, reflect on experiences,
-      and express ideas with clarity and sensitivity.
-    </p>
-  </div>
-
-  <div class="card activity-image">
-    <img src="../images/Hiking.jpg" alt="Travel and hiking experiences">
-  </div>
-
-  <div class="grid">
     <div class="card">
-      <h2>Sports Practice</h2>
       <p>
-        Regular practice of football, fitness, and hiking,
-        contributing to physical well-being, discipline,
-        and a healthy balance alongside academic commitments.
+        Beyond my academic and technical path, I place great importance on activities
+        that nourish curiosity, creativity, and personal balance.
+        Traveling and hiking play a central role in this approach,
+        allowing me to discover new places, landscapes, cultures,
+        and perspectives through direct experience.
+      </p>
+
+      <p>
+        I am also deeply interested in writing, particularly poetry and journalistic-style texts,
+        which I use as ways to observe the world, reflect on experiences,
+        and express ideas with clarity and sensitivity.
       </p>
     </div>
 
-    <div class="card">
-      <h2>Creative & Personal Interests</h2>
-      <p>
-        Strong personal interest in travel, writing, poetry,
-        and journalistic expression, as well as photography.
-        These activities foster observation skills,
-        creativity, and a reflective approach to the world.
-      </p>
+    <div class="card activity-image">
+      <img src="../images/Hiking.jpg" alt="Travel and hiking experiences">
     </div>
-  </div>
-</main>
 
-<footer>
-  © <span id="year"></span> Hassan EL SAHILY · ENSEEIHT
-</footer>
+    <div class="grid">
+      <div class="card">
+        <h2>Sports Practice</h2>
+        <p>
+          Regular practice of football, fitness, and hiking,
+          contributing to physical well-being, discipline,
+          and a healthy balance alongside academic commitments.
+        </p>
+      </div>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+      <div class="card">
+        <h2>Creative & Personal Interests</h2>
+        <p>
+          Strong personal interest in travel, writing, poetry,
+          and journalistic expression, as well as photography.
+          These activities foster observation skills,
+          creativity, and a reflective approach to the world.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Hassan EL SAHILY · ENSEEIHT
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
