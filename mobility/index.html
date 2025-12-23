@@ -25,9 +25,42 @@
       /* very light */
       border-left: 4px solid var(--green);
     }
+
     .card p {
-    margin-bottom: 1rem;
-  }
+      margin-bottom: 1rem;
+    }
+
+    .german-section {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .german-image img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: #fff;
+      padding: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .german-section {
+        grid-template-columns: 1fr;
+      }
+
+      .german-image {
+        order: -1;
+        text-align: center;
+      }
+
+      .german-image img {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 
@@ -100,18 +133,26 @@
       </div>
     </div>
 
-    <div class="card">
-      <h2>Second Foreign Language (LV2 — German)</h2>
-      <p>
-        I am currently studying <strong>German as a second foreign language (LV2)</strong>,
-        motivated by its importance in the European engineering and industrial ecosystem.
-      </p>
-      <p>
-        Learning German allows me to strengthen my <strong>linguistic versatility</strong>
-        and prepares me for potential professional opportunities in
-        <strong>international and cross-border environments</strong>,
-        particularly within Europe.
-      </p>
+    <div class="card german-section">
+      <div class="german-text">
+        <h2>Second Foreign Language (LV2 — German)</h2>
+
+        <p>
+          I am currently studying <strong>German as a second foreign language (LV2)</strong>,
+          motivated by its importance in the European engineering and industrial ecosystem.
+        </p>
+
+        <p>
+          Learning German allows me to strengthen my <strong>linguistic versatility</strong>
+          and prepares me for potential professional opportunities in
+          <strong>international and cross-border environments</strong>,
+          particularly within Europe.
+        </p>
+      </div>
+
+      <div class="german-image">
+        <img src="../images/german.png" alt="Learning German language in a European context">
+      </div>
     </div>
 
     <div class="card">
