@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Career Development — Hassan EL SAHILY</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .card p {
+    margin-bottom: 1rem;
+  }
+  </style>
 </head>
+
 <body>
-<header>
-  <nav>
-    <a href="../index.html">Welcome</a>
-    <a href="../engineering/index.html">Engineering</a>
-    <a href="../mobility/index.html">Mobility</a>
-    <a href="../sustainability/index.html">Sustainability</a>
-    <a href="../activities/index.html">Activities</a>
-    <a href="index.html">Career</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="../index.html">Welcome</a>
+      <a href="../engineering/index.html">Engineering</a>
+      <a href="../mobility/index.html">Mobility</a>
+      <a href="../sustainability/index.html">Sustainability</a>
+      <a href="../activities/index.html">Activities</a>
+      <a href="index.html">Career</a>
+    </nav>
+  </header>
 
-<main>
-  <h1>Career Development</h1>
-  <div class="grid">
+  <main>
+    <h1>Career Development</h1>
     <div class="card">
-      <h2>Internships</h2>
-      <p>Professional experiences that helped me develop technical and teamwork skills in real environments.</p>
-      <a href="internships.html" class="btn">View Internships</a>
+      <p>
+        I am currently specializing in <strong>computer systems, architecture, and networks</strong>,
+        with a strong academic interest in low-level systems, infrastructure, and the foundations
+        that enable reliable and scalable computing.
+      </p>
+
+      <p>
+        Beyond engineering practice, I aspire to pursue a <strong>PhD</strong>
+        and build a long-term career in <strong>academia</strong>.
+        My objective is to contribute to scientific research while engaging in
+        <strong>university-level teaching</strong>,
+        as I strongly believe in the role of education as a driver of inspiration,
+        critical thinking, and intellectual growth.
+      </p>
+
+      <p>
+        I am particularly motivated by research in computer science,
+        where scientific work not only advances technology,
+        but also makes knowledge, tools, and innovation
+        <strong>accessible to a wider community</strong>.
+        Through research and teaching, I aim to contribute to the
+        <strong>greater good</strong> by supporting open knowledge,
+        scientific rigor, and the transmission of expertise to future generations.
+      </p>
     </div>
 
-    <div class="card">
-      <h2>PPE ( Student Professional Project)</h2>
-      <p>Reflections on my professional ambitions, specialization goals, and career orientation as an engineer.</p>
-      <a href="pep.html" class="btn">View PPE</a>
-    </div>
-  </div>
-</main>
+    <div class="grid">
+      <div class="card">
+        <h2>Internships</h2>
+        <p>Professional experiences that helped me develop technical and teamwork skills in real environments.</p>
+        <a href="internships.html" class="btn">View Internships</a>
+      </div>
 
-<footer>© <span id="year"></span> Hassan EL SAHILY · ENSEEIHT</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+      <div class="card">
+        <h2>PPE ( Student Professional Project)</h2>
+        <p>Reflections on my professional ambitions, specialization goals, and career orientation as an engineer.</p>
+        <a href="pep.html" class="btn">View PPE</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> Hassan EL SAHILY · ENSEEIHT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
