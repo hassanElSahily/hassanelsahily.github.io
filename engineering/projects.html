@@ -14,9 +14,7 @@
       gap: 0.4rem;
     }
 
-    .project-image img {
-      max-height: 280px;
-    }
+
 
     .skill {
       background: var(--green);
@@ -54,6 +52,29 @@
     .project:nth-child(even) .project-image {
       order: -1;
     }
+
+    .project-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Default: photos */
+    .project-image img {
+      width: 100%;
+      max-height: 280px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      object-fit: cover;
+    }
+
+    /* Screenshots / games / terminal */
+    .project-image img.screenshot {
+      object-fit: contain;
+      background: #000;
+      padding: 0.75rem;
+    }
+
 
     /* Responsive (mobile) */
     @media (max-width: 900px) {
@@ -277,7 +298,7 @@
 
       </div>
       <div class="project-image">
-        <img src="../images/Archi.jpg" alt="Gems Hunt project screenshot">
+        <img src="../images/Archi.jpg" alt="Space Invaders RISC-V Assembly game screenshot" class="screenshot">
       </div>
     </div>
 
